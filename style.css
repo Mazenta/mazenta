@@ -1,0 +1,305 @@
+@charset "UTF-8";
+
+/* 共通部分
+----------------------------- */
+html {
+  font-size: 100%;
+}
+body {
+  font-family: Georgia, '游明朝', YuMincho, 'Hiragino Mincho ProN', Meiryo, serif;
+}
+img {
+  max-width: 100%
+}
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 4% 3%;
+}
+a {
+  text-decoration: none;
+}
+
+/* HEADER
+----------------------------- */
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px
+}
+
+header a {
+    color: black;
+}
+
+.logo h1 {
+  font-size: 35px;
+}
+
+.logo a:hover {
+  opacity: 0.7;
+  transition: all 0.2s;
+}
+
+.logo p {
+  color: gray;
+}
+
+.main-nav {
+  display: flex;
+  list-style: none;
+  margin-top: 40px;
+}
+
+.main-nav a:hover {
+  color: #e3a44e;
+  transition: all 0.2s;
+}
+
+.main-nav li {
+  margin-left: 30px;
+  font-size: 16px;
+}
+
+.search-parts {
+  width: 35px;
+  margin-top: 35px;
+}
+
+/* MAIN
+----------------------------- */
+.introduction img {
+  margin-bottom: 90px;
+}
+
+.introduction h2 {
+  margin-bottom: 90px;
+  font-size: 25px;
+  font-weight: normal;
+  color: #666666;
+}
+
+.main-contents {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 65px;
+}
+
+.date {
+  margin-right: 200px;
+  white-space: nowrap;
+  color: #aaaaaa;
+}
+
+.date:hover {
+  color: #666666;
+  transition: all 0.2s;
+}
+
+.main-contents-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-contents-title {
+  color: black;
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 22px;
+}
+
+.main-contents-title:hover
+{
+  color: #e3a44e;
+  transition: all 0.2s;
+}
+
+.main-contents p {
+  color: #666666;
+}
+
+.pagination {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-right: 200px;
+}
+
+.pagination a {
+  border: 1px solid #dddddd;
+  padding: 10px 18px;
+  line-height: 25px;
+  margin-bottom: 100px;
+  margin-right: -40px;
+  position: relative;
+  display: inline-block;
+}
+
+.pagination a:hover {
+  border: 1px solid #bbbbbb;
+  padding: 10px 18px;
+  transition: all 0.2s;
+}
+
+.now-page {
+  color: black;
+  background-color: #f2f2f2;
+  border: 1px solid #dddddd;
+  padding: 10px 18px;
+  line-height: 25px;
+  margin-bottom: 100px;
+  margin-right: -40px;
+  position: relative;
+  display: inline-block;
+}
+
+.other-page {
+  color: #666666;
+}
+
+.other-page:hover {
+  color: black;
+  transition: all 0.2s;
+}
+
+/* SUB-FOOTER
+----------------------------- */
+.sub-footer {
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  padding: 90px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sub-footer a {
+  display: inline-block;
+}
+
+.category a ,
+.recent-post a {
+  text-decoration: underline;
+  text-decoration-color: #dddddd;
+  line-height: 2.7;
+}
+
+.category a:hover ,
+.recent-post a:hover {
+  color: #e3a44e;
+  transition: all 0.2s;
+}
+
+.sub-footer-theme {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px
+}
+
+.sub-footer-text {
+  color: #666666;
+  font-size: 16px;
+}
+
+/* PROFILE */
+.profile {
+  width: 25%;
+  margin-right: 60px;
+  line-height: 1.7;
+}
+
+.profile-introduction {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.profile img {
+  border-radius: 50%;
+  width: 100px;
+}
+
+.profile-icon {
+  color: #aaaaaa;
+  display: inline-block;
+  font-size: 23px;
+  margin-left: 10px;
+}
+
+.profile-icon:hover {
+  color: #666666;
+  transition: all 0.2s;
+}
+
+.profile-icons {
+  margin-left: 15px;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 20px 20px 0 20px;
+}
+
+.profile-text {
+  color: #aaaaaa;
+}
+
+/* SUB-PROFILE */
+.sub-profile {
+  width: 20%;
+}
+
+/* RECENT-POST */
+.recent-post {
+  width: 15%;
+}
+
+.recent-post-date {
+  color: #aaaaaa;
+  position: relative;
+  top: -10px;
+}
+/* CATEGORY */
+.category {
+  width: 20%;
+}
+
+.sub-footer-search {
+  display: inline-block;
+  color: #666666;
+  border: 1px solid #dddddd;
+  padding: 10px;
+  margin-top: 50px;
+}
+
+/* FOOTER
+----------------------------- */
+footer {
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+footer .profile-icons {
+  position: absolute;
+  left: 0;
+}
+
+.footer-text {
+  display: flex;
+}
+
+.footer-text a {
+  color: #666666;
+  margin: 0 5px;
+}
+
+.footer-text a:hover {
+  color: black;
+  transition: all 0.2s;
+}
+
+.footer-text p {
+  color: #aaaaaa;
+}
